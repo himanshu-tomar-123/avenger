@@ -1,0 +1,120 @@
+body{
+background-color: #111111;
+color: aliceblue;
+}
+
+.top{
+    display: flex;
+    height: 30vh;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+.top-left-head{
+font-size: 100px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.top-left-line{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+}
+
+
+/* middle part css start here */
+
+.middle{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.character-card {
+    position: relative;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    /* margin-bottom: 90px; */
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.image-char{
+    height: 100%;
+    position: relative;
+    left: -160px;
+}
+.image-corr{
+    height: 100%;
+    position: relative;
+    left: -200px;
+}
+.character-title {
+    padding: 15px;
+    font-size: 2-px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /* color: black; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.char-card-prime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: #2a2a2a; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+    position: relative; /* Stick the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Choose a clean font */
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size */
+}
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+    }
+}
+
